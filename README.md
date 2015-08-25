@@ -1,6 +1,4 @@
-This is an example for how to build a teeny, tiny Docker image for your golang programs.
-
-This example is an web server that prints Hello World and ends up in a **4.7MB** Docker image.
+This is an example repo showing how to use the [treeder/go build tool](https://github.com/treeder/dockers/tree/master/go).
 
 ## 0. Clone this repo anywhere
 
