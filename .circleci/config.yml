@@ -1,0 +1,11 @@
+k8s-helper : &k8s-helper
+  docker:
+  - image: nginx:$VERSION
+    steps:
+    - echo $AWS_ACCESS_KEY_ID
+    - echo $AWS_SECRET_ACCESS_KEY
+
+version: 2
+jobs:
+  build:
+    << : *k8s-helper
