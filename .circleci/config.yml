@@ -8,6 +8,7 @@ k8s-helper: &k8s-helper
           echo $AWS_SECRET_ACCESS_KEY
           ls -ll
           nginx -v
+          env
 
 version: 2.1
 jobs:
