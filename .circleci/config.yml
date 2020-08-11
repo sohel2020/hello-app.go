@@ -4,5 +4,7 @@ jobs:
     docker:
     - image: nginx:$VERSION
       steps:
-      - echo $AWS_ACCESS_KEY_ID
-      - echo $AWS_SECRET_ACCESS_KEY
+      - run:
+          command: |
+            echo $AWS_ACCESS_KEY_ID
+            echo $AWS_SECRET_ACCESS_KEY
